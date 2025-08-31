@@ -46,13 +46,13 @@ export default function HeroSection({ data }: HeroSectionProps) {
               </div>
 
               <div className="flex justify-center md:justify-start space-x-4">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="hover:bg-blue-500 hover:scale-110 cursor-pointer transition-all duration-200 hover:shadow-md">
                   <Github className="h-7   w-7  " />
                 </Button>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="hover:bg-blue-500 hover:scale-105 cursor-pointer transition-all duration-200 hover:shadow-md">
                   <Linkedin className="h-7   w-7  " />
                 </Button>
-                <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:scale-105 transition-all duration-200">
+                <Button variant="ghost" size="icon" className="hover:bg-blue-500 hover:scale-105 cursor-pointer transition-all duration-200 hover:shadow-md">
                   <Mail className="h-7   w-7  " />
                 </Button>
               </div>
@@ -65,7 +65,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
                   {data.description}
                 </p>
               </div>
-              
+
               <div className="space-y-3">
                 <h3 className="text-lg font-medium">Uzmanlık Alanlarım</h3>
                 <div className="flex flex-wrap gap-2">
