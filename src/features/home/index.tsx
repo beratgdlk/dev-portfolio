@@ -1,15 +1,13 @@
 import HeroSection from "./components/HeroSection";
-import BlogSection from "./components/BlogSection";
-import { heroData, blogPosts } from "./data";
+import { heroData } from "./data";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection data={heroData} />
-      <BlogSection posts={blogPosts} />
     </>
   );
 }
 
-export { HeroSection, BlogSection };
-export type { HeroData, BlogPost } from "./types";
+export type { HeroData } from "./types";
+export { HeroSection };
