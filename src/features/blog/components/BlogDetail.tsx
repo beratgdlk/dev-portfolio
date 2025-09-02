@@ -22,7 +22,7 @@ export default function BlogDetail({ post }: BlogDetailProps) {
         <Button variant="ghost" className="group p-0 h-auto font-medium text-sm" asChild>
           <Link href="/blog">
             <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-            Blog'a Dön
+            {t.backToBlog}
           </Link>
         </Button>
       </div>
@@ -87,7 +87,7 @@ export default function BlogDetail({ post }: BlogDetailProps) {
         <Button variant="outline" asChild>
           <Link href="/blog">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Tüm Blog Yazıları
+            {t.allPosts}
           </Link>
         </Button>
       </div>
