@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/hooks";
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import { AboutData } from "../types";
 
@@ -44,8 +45,14 @@ export default function AboutSection({ data }: AboutSectionProps) {
             <div className="text-center md:text-left">
               <h2 className="text-2xl font-bold mb-2">{data.name}</h2>
               <p className="text-muted-foreground mb-1">{data.title}</p>
-              {data.website && (
-                <p className="text-sm text-muted-foreground">{data.website}</p>
+              {data.socialLinks?.email && (
+                <a
+                  href={`mailto:${data.socialLinks.email}`}
+                  className="inline-flex items-center gap-2 text-sm text-primary no-underline border border-primary/30 px-3 py-1.5 rounded-md hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                >
+                  <Mail className="h-4 w-4" />
+                  {data.socialLinks.email}
+                </a>
               )}
             </div>
 
