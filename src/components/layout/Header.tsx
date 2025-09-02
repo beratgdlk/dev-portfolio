@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Globe, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -9,8 +10,8 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
+  const { language, t, toggleLanguage } = useLanguage();
   const [mounted, setMounted] = useState(false);
-  const [language, setLanguage] = useState("TR");
 
   useEffect(() => {
     setMounted(true);
@@ -20,9 +21,7 @@ export default function Header() {
     return null;
   }
 
-  const toggleLanguage = () => {
-    setLanguage(language === "TR" ? "EN" : "TR");
-  };
+
 
   return (
     <header className="w-full py-6 px-6">
@@ -45,19 +44,19 @@ export default function Header() {
             href="/blog" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            Blog
+            {t.blog}
           </Link>
           <Link 
             href="/projects" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            Projects
+            {t.projects}
           </Link>
           <Link 
             href="/about" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            About
+            {t.about}
           </Link>
         </nav>
 
@@ -71,7 +70,7 @@ export default function Header() {
             className="text-sm"
           >
             <Globe className="h-4 w-4 mr-1" />
-            {language}
+            {language.toUpperCase()}
           </Button>
 
           {/* Theme Toggle */}

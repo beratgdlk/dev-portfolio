@@ -1,8 +1,11 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="w-full py-8 px-6 mt-auto">
       <div className="max-w-6xl mx-auto">
@@ -53,7 +56,7 @@ export default function Footer() {
         
         {/* Copyright */}
         <div className="text-center text-base text-muted-foreground">
-          Berat Güdelek • © {new Date().getFullYear()} • beratgdlk.com
+          {t.copyright.replace('{year}', new Date().getFullYear().toString())}
         </div>
       </div>
     </footer>
