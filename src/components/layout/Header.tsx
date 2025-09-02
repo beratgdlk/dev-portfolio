@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/hooks";
 import { FileText, FolderOpen, Globe, Menu, Moon, Sun, User, X } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/hooks";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
