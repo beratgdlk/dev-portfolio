@@ -2,9 +2,9 @@ import { BlogPost, HeroData } from "../types";
 
 // Hero Data
 export const heroData: HeroData = {
-  name: "Emre Seferoğlu",
-  title: "Fullstack Mobile Developer",
-  description: "Here, I share through my work my experience as a fullstack developer and everything I'm learning about Web Development, Mobile Apps, and modern technologies.",
+  name: "Berat Güdelek",
+  title: "Fullstack Web Developer",
+  description: "Here, I share through my writing my experience as a fullstack web developer and everything I'm learning about mobile app development and more.",
   resumeUrl: "#resume"
 };
 
