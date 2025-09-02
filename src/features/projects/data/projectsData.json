@@ -1,3 +1,81 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "portfolio-website",
+      "title": "Kişisel Portfolio Website",
+      "description": "Modern ve responsive tasarımlı kişisel portfolio websitesi. Dark mode desteği, çoklu dil seçeneği ve dinamik içerik yönetimi ile.",
+      "longDescription": "Bu proje, React ve Next.js kullanılarak geliştirilmiş modern bir portfolio websitesidir. TypeScript ile tip güvenliği sağlanmış, Tailwind CSS ile şık tasarımlar oluşturulmuştur.",
+      "technologies": ["NextJS", "React", "TypeScript", "TailwindCSS", "Vercel"],
+      "image": "/projects/portfolio.jpg",
+      "liveUrl": "https://myportfolio.com",
+      "githubUrl": "https://github.com/username/portfolio",
+      "featured": true,
+      "status": "completed",
+      "date": "2024-01-15"
+    },
+    {
+      "id": "ecommerce-app",
+      "title": "E-Ticaret Uygulaması",
+      "description": "Full-stack e-ticaret platformu. Kullanıcı yönetimi, ürün kataloğu, sepet işlemleri ve ödeme entegrasyonu içerir.",
+      "longDescription": "MongoDB veritabanı kullanılarak geliştirilmiş tam özellikli e-ticaret uygulaması. Stripe ödeme entegrasyonu ve admin paneli mevcuttur.",
+      "technologies": ["React", "NodeJS", "MongoDB", "Stripe", "Express"],
+      "image": "/projects/ecommerce.jpg",
+      "liveUrl": "https://myecommerce.com",
+      "githubUrl": "https://github.com/username/ecommerce",
+      "featured": true,
+      "status": "completed",
+      "date": "2024-02-20"
+    },
+    {
+      "id": "blog-platform",
+      "title": "Blog Platformu",
+      "description": "Markdown destekli blog yazma platformu. SEO optimizasyonu, arama özelliği ve sosyal medya entegrasyonu ile.",
+      "longDescription": "Content Management System özellikleri ile birlikte geliştirilmiş blog platformu. Yazarlar için kolay içerik yönetimi sağlar.",
+      "technologies": ["NextJS", "MDX", "Prisma", "PostgreSQL", "TailwindCSS"],
+      "image": "/projects/blog.jpg",
+      "liveUrl": "https://myblog.com",
+      "githubUrl": "https://github.com/username/blog",
+      "featured": false,
+      "status": "completed",
+      "date": "2023-11-10"
+    },
+    {
+      "id": "task-manager",
+      "title": "Görev Yönetim Uygulaması",
+      "description": "Takım çalışması için geliştirilmiş görev yönetim uygulaması. Kanban board, gerçek zamanlı güncelleme ve bildirimler.",
+      "longDescription": "Real-time collaboration özellikleri ile birlikte geliştirilmiş görev yönetim sistemi. WebSocket kullanarak anlık güncellemeler sağlar.",
+      "technologies": ["Vue", "NodeJS", "Socket.io", "MongoDB", "Express"],
+      "image": "/projects/taskmanager.jpg",
+      "liveUrl": "https://taskmanager.com",
+      "githubUrl": "https://github.com/username/taskmanager",
+      "featured": false,
+      "status": "in-progress",
+      "date": "2024-03-05"
+    },
+    {
+      "id": "weather-app",
+      "title": "Hava Durumu Uygulaması",
+      "description": "Konum tabanlı hava durumu uygulaması. 7 günlük tahmin, hava durumu haritaları ve push bildirimler içerir.",
+      "longDescription": "OpenWeatherMap API'sini kullanarak geliştirilmiş kapsamlı hava durumu uygulaması. PWA özellikleri ile mobil deneyim sunur.",
+      "technologies": ["React", "PWA", "OpenWeatherMap", "Geolocation", "Charts"],
+      "image": "/projects/weather.jpg",
+      "liveUrl": "https://weatherapp.com",
+      "githubUrl": "https://github.com/username/weather",
+      "featured": false,
+      "status": "completed",
+      "date": "2023-09-15"
+    },
+    {
+      "id": "cryptocurrency-tracker",
+      "title": "Kripto Para Takip Uygulaması",
+      "description": "Gerçek zamanlı kripto para fiyat takibi. Portföy yönetimi, fiyat alarmları ve detaylı analiz grafikleri.",
+      "longDescription": "CoinGecko API kullanılarak geliştirilmiş kripto para takip uygulaması. Kullanıcılar portföylerini yönetebilir ve piyasa analizleri yapabilir.",
+      "technologies": ["React", "TypeScript", "Chart.js", "API", "LocalStorage"],
+      "image": "/projects/crypto.jpg",
+      "githubUrl": "https://github.com/username/crypto-tracker",
+      "featured": false,
+      "status": "planned",
+      "date": "2024-04-01"
+    }
+  ]
 }
