@@ -10,7 +10,7 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
   [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
   
-  [🌍 Live Demo](...) • [📧 Contact](mailto:berat@example.com)
+  [🌍 Live Demo](https://beratgdlk.com) • [📧 Contact](mailto:beratgdlk@gmail.com)
 </div>
 
 ---
@@ -344,9 +344,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Berat Güdelek**
 - 🌐 Website: [beratgdlk.com](https://beratgdlk.com)
-- 📧 Email: [berat@example.com](mailto:berat@example.com)
-- 💼 LinkedIn: [linkedin.com/in/beratgdlk](https://linkedin.com/in/beratgdlk)
+- 📧 Email: [beratgdlk@gmail.com](mailto:beratgdlk@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/beratgudelek](https://www.linkedin.com/in/beratgudelek/)
 - 🐙 GitHub: [github.com/beratgdlk](https://github.com/beratgdlk)
+- 📝 Medium: [medium.com/@beratgdlk](https://medium.com/@beratgdlk)
 
 ---
 
