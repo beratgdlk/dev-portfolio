@@ -16,6 +16,14 @@ interface Translations {
   heroPortfolio: string;
   heroDescription: string;
   
+  // Blog Page
+  blogTitle: string;
+  blogDescription: string;
+  searchPlaceholder: string;
+  readMore: string;
+  noResults: string;
+  allPosts: string;
+  
   // Footer
   copyright: string;
 }
@@ -33,6 +41,14 @@ const translations: Record<Language, Translations> = {
     heroPortfolio: 've burası benim portfolyom.',
     heroDescription: 'Burada, yazılarım aracılığıyla bir fullstack web developer olarak deneyimlerimi ve daha fazlasını paylaşıyorum. Şu sıralar mobil app development öğreniyorum ve bunları da yazıyor olacağım.',
     
+    // Blog Page
+    blogTitle: 'Blog Yazıları',
+    blogDescription: 'Teknoloji, geliştirme süreçleri ve öğrendiklerim hakkında yazdığım makaleler.',
+    searchPlaceholder: 'Blog yazılarında ara...',
+    readMore: 'Devamını Oku',
+    noResults: 'Aradığınız kriterlere uygun yazı bulunamadı.',
+    allPosts: 'Tüm Yazılar',
+    
     // Footer
     copyright: 'Berat Güdelek • © {year} • beratgdlk.com'
   },
@@ -47,6 +63,14 @@ const translations: Record<Language, Translations> = {
     heroName: "I'm Berat,",
     heroPortfolio: 'and this is my portfolio.',
     heroDescription: 'Here, I share through my writing my experience as a fullstack web developer and more. Currently learning mobile app development and will be writing about it.',
+    
+    // Blog Page
+    blogTitle: 'Blog Posts',
+    blogDescription: 'Articles about technology, development processes, and everything I\'m learning.',
+    searchPlaceholder: 'Search blog posts...',
+    readMore: 'Read More',
+    noResults: 'No posts found matching your criteria.',
+    allPosts: 'All Posts',
     
     // Footer
     copyright: 'Berat Güdelek • © {year} • beratgdlk.com'
