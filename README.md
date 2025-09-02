@@ -10,7 +10,7 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
   [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
   
-  [🌍 Live Demo](https://beratgdlk.com) • [📧 Contact](mailto:berat@example.com)
+  [🌍 Live Demo](...) • [📧 Contact](mailto:berat@example.com)
 </div>
 
 ---
