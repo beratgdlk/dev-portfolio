@@ -58,9 +58,9 @@ const translations: Record<Language, Translations> = {
     
     // About Page
     aboutTitle: 'Hakkımda',
-    aboutDescription: 'Berat, kendi kendini yetiştirmiş bir fullstack web developer\'dır. 2020\'den beri web geliştirme alanında aktif olarak çalışmakta ve modern teknolojilerle projeler geliştirmektedir.',
-    aboutCurrentWork: 'Şu anda kişisel projeler üzerinde çalışıyor ve mobil uygulama geliştirme konusunda kendini geliştiriyor.',
-    aboutFreeTime: 'Boş zamanlarında yeni teknolojileri öğreniyor, blog yazıları yazıyor ve açık kaynak projelere katkıda bulunuyor.',
+    aboutDescription: 'Mühendislikten yazılıma geçiş yaptıktan sonra bugün full‑stack bir geliştiriciyim. OnlyJs Software Academy’den edindiğim altyapıyla hem frontend hem de backend tarafında üretim yapıyor, kendimi her geçen gün geliştirip güncel tutuyorum. Ayrıca mobil uygulama geliştirme üzerine çalışıyor ve öğrenmeye devam ediyorum.',
+    aboutCurrentWork: '2024 Mart’tan beri web geliştirme alanını tek odak noktam yaparak kendimi geliştiriyor ve alaylı bir yazılımcı olarak gelişimimi sürdürüyorum. Yeni sistemlere hızla adapte olabileceğime ve sürekli öğrenmeyle etkili çözümler üreteceğime güveniyorum.',
+    aboutFreeTime: 'Üniversitenin ilk yıllarında otostopla Türkiye’yi gezerek Marmara, Ege, Akdeniz ve İç Anadolu’nun bir kısmını keşfettim. Çocukluğumdan beri özellikle gezi belgesellerine meraklıyım. En büyük hayalim; kariyerimi keşfetme tutkumla birleştirip, dünyayı gezerken etkili çözümler üreten bir dijital göçebe olarak yaşamak.',
     backToBlog: 'Blog\'a Dön',
     
     // Footer
@@ -88,9 +88,9 @@ const translations: Record<Language, Translations> = {
     
     // About Page
     aboutTitle: 'About',
-    aboutDescription: 'Berat is a self-taught fullstack web developer. He has been actively working in web development since 2020 and developing projects with modern technologies.',
-    aboutCurrentWork: 'Currently working on personal projects and improving himself in mobile application development.',
-    aboutFreeTime: 'In his free time, he learns new technologies, writes blog posts and contributes to open source projects.',
+    aboutDescription: 'After transitioning from engineering into software, I am now a full‑stack developer. With the foundation I built at the OnlyJs Software Academy, I deliver across both frontend and backend, continuously improving myself and staying up to date. I am also learning mobile application development.',
+    aboutCurrentWork: 'Since March 2024, I have been developing myself with a single focus on web development and continue to grow as a self-taught developer. I have full confidence in my ability to adapt to new systems and pursue continuous learning to build impactful solutions.',
+    aboutFreeTime: 'During my early university years, I hitchhiked across Turkey—exploring regions like Marmara, the Aegean, the Mediterranean, and parts of Central Anatolia. Since childhood, I have been deeply passionate about travel documentaries, and my biggest dream is to combine my career with my love for exploration: to live as a digital nomad, building impactful solutions while traveling the world.',
     backToBlog: 'Back to Blog',
     
     // Footer
