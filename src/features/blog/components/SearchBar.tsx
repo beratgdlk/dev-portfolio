@@ -1,8 +1,7 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/hooks";
 import { Search } from "lucide-react";
-import { useEffect, useState } from "react";
 
 interface SearchBarProps {
   value: string;

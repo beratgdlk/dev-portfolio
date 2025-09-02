@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/hooks";
 import { Hand } from "lucide-react";
 import { HeroData } from "../types";
 
