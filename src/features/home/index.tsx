@@ -11,3 +11,4 @@ export default function HomePage() {
 
 export type { HeroData } from "./types";
 export { HeroSection };
+
