@@ -168,29 +168,20 @@ export async function fetchGitHubRepositoriesGraphQL(
   username: string,
   first: number = 50,
   after?: string
-): Promise<GitHubGraphQLResponse> {
-  // Güvenlik: Token kod içinde tutulmamalı. Sunucu tarafında `.env.local`'dan okunmalıdır.
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) {
-    throw new GitHubGraphQLError('GitHub token eksik (GITHUB_TOKEN).', 401);
-  }
-
+): Promise<GitHubGraphQLResponse> { 
   try {
     console.log(`🔄 GitHub GraphQL: ${username} kullanıcısının repolarını çekiliyor...`);
     
-    const response = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
+    // İstemci doğrudan GitHub'a değil, sunucu API route'una istek atar
+    const response = await fetch('/api/github', {
+      method: 'POST',   
       headers: {
-        'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: GET_USER_REPOSITORIES,
-        variables: {
-          login: username,
-          first,
-          after
-        }
+        username,
+        first,
+        after
       })
     });
 
