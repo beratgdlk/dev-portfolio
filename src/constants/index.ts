@@ -6,9 +6,10 @@ export const SITE_CONFIG = {
   description: "Fullstack web developer sharing experiences and learnings about backend, frontend, and mobile app development.",
   author: {
     name: "Berat Güdelek",
-    email: "berat@example.com",
+    email: "beratgdlk@gmail.com",
     github: "https://github.com/beratgdlk",
-    linkedin: "https://linkedin.com/in/beratgdlk"
+    linkedin: "https://www.linkedin.com/in/beratgudelek/",
+    medium: "https://medium.com/@beratgdlk"
   }
 } as const;
 
