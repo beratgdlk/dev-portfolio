@@ -1,9 +1,4 @@
 import { HeroData } from "../types";
+import heroDataJson from "./heroData.json";
 
-// Hero Data
-export const heroData: HeroData = {
-  name: "Berat Güdelek",
-  title: "Fullstack Web Developer",
-  description: "Here, I share through my writing my experience as a fullstack web developer and everything I'm learning about mobile app development and more.",
-  resumeUrl: "#resume"
-};
+export const heroData: HeroData = heroDataJson;

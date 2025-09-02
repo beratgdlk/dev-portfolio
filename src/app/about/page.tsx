@@ -1,2 +1,2 @@
-export { default } from "@/features/about/page";
+export { default } from "@/features/about";
 

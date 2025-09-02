@@ -1,5 +1,7 @@
 "use client";
 
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import BlogCard from "./components/BlogCard";
@@ -16,6 +18,24 @@ export default function BlogPage() {
     post.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
     post.tags?.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
   );
+
+  return (
+    <div className="min-h-screen bg-background flex flex-col">
+      <Header />
+      <main className="flex-1">
+        <BlogPageInner searchQuery={searchQuery} setSearchQuery={setSearchQuery} filteredPosts={filteredPosts} />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+function BlogPageInner({ searchQuery, setSearchQuery, filteredPosts }: {
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
+  filteredPosts: any[];
+}) {
+  const { t } = useLanguage();
 
   return (
     <div className="w-full max-w-6xl mx-auto px-6 py-8 md:py-12">

@@ -1,0 +1,17 @@
+{
+  "name": "Berat Güdelek",
+  "title": "Fullstack Web Developer",
+  "description": "",
+  "currentWork": "",
+  "freeTime": "",
+  "avatar": "/avatar.jpg",
+  "website": "beratgdlk.com",
+  "socialLinks": {
+    "email": "berat@example.com",
+    "github": "https://github.com/beratgdlk",
+    "linkedin": "https://linkedin.com/in/beratgdlk",
+    "twitter": "",
+    "instagram": "",
+    "youtube": ""
+  }
+}
