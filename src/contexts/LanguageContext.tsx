@@ -33,6 +33,12 @@ interface Translations {
   
   // Footer
   copyright: string;
+  
+  // Page Titles
+  pageTitleHome: string;
+  pageTitleBlog: string;
+  pageTitleProjects: string;
+  pageTitleAbout: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -64,7 +70,13 @@ const translations: Record<Language, Translations> = {
     backToBlog: 'Blog\'a Dön',
     
     // Footer
-    copyright: 'Berat Güdelek • © {year} • beratgdlk.com'
+    copyright: 'Berat Güdelek • © {year} • beratgdlk.com',
+    
+    // Page Titles
+    pageTitleHome: 'Berat Güdelek - Fullstack Web Developer',
+    pageTitleBlog: 'Blog-beratgdlk',
+    pageTitleProjects: 'Projeler-beratgdlk',
+    pageTitleAbout: 'Hakkımda-beratgdlk'
   },
   en: {
     // Navigation
@@ -94,7 +106,13 @@ const translations: Record<Language, Translations> = {
     backToBlog: 'Back to Blog',
     
     // Footer
-    copyright: 'Berat Güdelek • © {year} • beratgdlk.com'
+    copyright: 'Berat Güdelek • © {year} • beratgdlk.com',
+    
+    // Page Titles
+    pageTitleHome: 'Berat Gudelek - Fullstack Web Developer',
+    pageTitleBlog: 'Blog-beratgdlk',
+    pageTitleProjects: 'Projects-beratgdlk',
+    pageTitleAbout: 'About-beratgdlk'
   }
 };
 
