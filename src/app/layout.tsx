@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "Berat Güdelek - Fullstack Web Developer",
   description: "Fullstack web developer sharing experiences and learnings about backend, frontend, and mobile app development.",
   icons: {
-    icon: '/logo-bg-black.ico',
-    shortcut: '/logo-bg-black.ico',
-    apple: '/logo-bg-black.ico',
+    icon: '/assets/icons/logo-bg-black.svg',
+    shortcut: '/assets/icons/logo-bg-black.svg',
+    apple: '/assets/icons/logo-bg-black.svg',
   },
 };
 
