@@ -1,5 +1,6 @@
 export interface ProjectData {
   id: string;
+  repoName?: string; // GitHub repo name (raw), e.g., "dev-portfolio"
   title: string;
   description: string;
   longDescription?: string;

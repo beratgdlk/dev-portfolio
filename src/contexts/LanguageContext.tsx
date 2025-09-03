@@ -54,6 +54,14 @@ interface Translations {
   githubApiErrorTitle: string;
   retryChecking: string;
   retryAfterToken: string;
+
+  // Blog Coming Soon
+  blogComingSoonTitle: string;
+  blogComingSoonDescription: string;
+  backToHome: string;
+  notifyByEmail: string;
+  emailSubject: string;
+  emailBody: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -106,7 +114,15 @@ const translations: Record<Language, Translations> = {
     // Common/API Errors
     githubApiErrorTitle: '🔑 GitHub API Hatası',
     retryChecking: 'Tekrar Kontrol Ediliyor...',
-    retryAfterToken: "Token'ı Ekledim, Tekrar Dene"
+    retryAfterToken: "Token'ı Ekledim, Tekrar Dene",
+
+    // Blog Coming Soon
+    blogComingSoonTitle: 'Blog çok yakında',
+    blogComingSoonDescription: 'Yeni yazılar üzerinde çalışıyorum. Çok yakında burada olacaklar.',
+    backToHome: 'Anasayfaya dön',
+    notifyByEmail: 'Mail ile haberdar et',
+    emailSubject: 'Blog Güncelleme Aboneliği',
+    emailBody: 'Merhaba, blog yazıları yayınlandığında haberdar olmak istiyorum.'
   },
   en: {
     // Navigation
@@ -157,7 +173,15 @@ const translations: Record<Language, Translations> = {
     // Common/API Errors
     githubApiErrorTitle: '🔑 GitHub API Error',
     retryChecking: 'Checking again...',
-    retryAfterToken: 'I added the token, try again'
+    retryAfterToken: 'I added the token, try again',
+
+    // Blog Coming Soon
+    blogComingSoonTitle: 'Blog is coming soon',
+    blogComingSoonDescription: "I'm working on new articles. They'll be here very soon.",
+    backToHome: 'Back to Home',
+    notifyByEmail: 'Notify me by email',
+    emailSubject: 'Blog Updates Subscription',
+    emailBody: 'Hello, I would like to be notified when blog posts are published.'
   }
 };
 

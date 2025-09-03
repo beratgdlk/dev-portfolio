@@ -260,6 +260,7 @@ export function mapGraphQLRepoToProject(repo: GitHubGraphQLRepo, isPinned: boole
 
   return {
     id: repo.nameWithOwner,
+    repoName: repo.name,
     title: repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
     description: repo.description || 'Bu proje için açıklama eklenmemiş.',
     longDescription: repo.description || undefined,
