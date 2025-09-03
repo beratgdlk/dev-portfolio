@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import {
-    fetchGitHubRepositoriesGraphQL,
-    filterAndSortGraphQLRepos,
-    GitHubGraphQLError,
-    mapGraphQLRepoToProject
+  fetchGitHubRepositoriesGraphQL,
+  filterAndSortGraphQLRepos,
+  GitHubGraphQLError,
+  mapGraphQLRepoToProject
 } from '../services/githubGraphQL';
 import { ProjectData } from '../types';
 
@@ -75,6 +75,7 @@ export function useGitHubProjectsGraphQL(username: string): UseGitHubProjectsGra
       const testPinnedProjects: ProjectData[] = [
         {
           id: 'test-pinned-1',
+          repoName: 'dev-portfolio',
           title: 'Pinned Test Project',
           description: 'Bu pinned bir test projesidir. GraphQL token ayarlandığında gerçek veriler gelecek.',
           technologies: ['graphql', 'test'],

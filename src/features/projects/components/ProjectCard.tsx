@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { cn } from "@/lib/utils";
 import { Calendar, Clock, GitFork, Github, Pin, Star } from "lucide-react";
 import Image from "next/image";
+import { getPinnedImageForRepo } from "../data/pinnedProjectImages";
 import { ProjectData } from "../types";
 import { getLanguageStyle } from "../utils/githubColors";
 import { getTechEmoji, getTechIconUrl } from "../utils/techIcons";
@@ -65,6 +66,8 @@ const getRelativeTime = (dateString: string): string => {
 };
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
+  // Pinned projeler için isteğe bağlı özel görsel
+  const pinnedImage = project.isPinned ? getPinnedImageForRepo(project.id, project.repoName || "") : null;
   return (
     <Card className={cn(
       "group overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 border-border/50 backdrop-blur-sm",
@@ -82,14 +85,15 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         </div>
       )}
       {/* Header with Image */}
-      {project.image && (
+      {(project.image || pinnedImage) && (
         <div className="relative aspect-video overflow-hidden rounded-t-xl">
           <Image
-            src={project.image}
+            src={pinnedImage || project.image!}
             alt={project.title}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={!!pinnedImage}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
