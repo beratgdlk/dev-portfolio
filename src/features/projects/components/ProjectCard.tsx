@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Calendar, Clock, GitFork, Github, Star } from "lucide-react";
+import { Calendar, Clock, GitFork, Github, Pin, Star } from "lucide-react";
 import Image from "next/image";
 import { ProjectData } from "../types";
 import { getLanguageStyle } from "../utils/githubColors";
@@ -40,32 +40,7 @@ const TechIcon = ({ tech, size = 16 }: { tech: string; size?: number }) => {
   return <span className="text-sm">{fallbackEmoji}</span>;
 };
 
-// Durum rengini belirleme
-const getStatusColor = (status: ProjectData['status']) => {
-  switch (status) {
-    case 'completed':
-      return 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400';
-    case 'in-progress':
-      return 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400';
-    case 'planned':
-      return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400';
-    default:
-      return 'bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400';
-  }
-};
-
-const getStatusText = (status: ProjectData['status']) => {
-  switch (status) {
-    case 'completed':
-      return 'Tamamlandı';
-    case 'in-progress':
-      return 'Devam Ediyor';
-    case 'planned':
-      return 'Planlandı';
-    default:
-      return 'Bilinmiyor';
-  }
-};
+// Durum rozetleri kaldırıldı; renk ve metin yardımcıları artık kullanılmıyor.
 
 // Göreceli zaman hesaplama
 const getRelativeTime = (dateString: string): string => {
@@ -93,11 +68,19 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
     <Card className={cn(
       "group overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 border-border/50 backdrop-blur-sm",
-      "h-full flex flex-col",
+      "h-full flex flex-col relative",
       // Featured projects için ring efekti
       project.featured && "ring-2 ring-primary/20 ring-offset-2 ring-offset-background",
       className
     )}>
+      {/* Global pinned badge - always visible (even without image) */}
+      {project.isPinned && (
+        <div className="absolute top-3 right-3 z-10">
+          <div className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground/90 h-7 w-7 shadow-sm ring-1 ring-primary/40">
+            <Pin className="h-4 w-4" />
+          </div>
+        </div>
+      )}
       {/* Header with Image */}
       {project.image && (
         <div className="relative aspect-video overflow-hidden rounded-t-xl">
@@ -109,20 +92,9 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-          
-          {/* Status Badge */}
-          <div className="absolute top-3 right-3">
-            <Badge 
-              className={cn(
-                "text-xs font-medium border-0",
-                getStatusColor(project.status)
-              )}
-            >
-              {getStatusText(project.status)}
-            </Badge>
-          </div>
         </div>
       )}
+
 
       <CardHeader className="pb-3">
         <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors line-clamp-2">

@@ -39,6 +39,21 @@ interface Translations {
   pageTitleBlog: string;
   pageTitleProjects: string;
   pageTitleAbout: string;
+
+  // Projects Page
+  projectsDescription: string;
+  featuredProjectsTitle: string;
+  otherProjectsTitle: string;
+  otherProjectsSubtitle: string; // uses {count}
+  showLess: string;
+  showAll: string;
+  showAllMore: string; // uses {count}
+  noProjectsFound: string;
+
+  // Common/API Errors
+  githubApiErrorTitle: string;
+  retryChecking: string;
+  retryAfterToken: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -76,7 +91,22 @@ const translations: Record<Language, Translations> = {
     pageTitleHome: 'Berat Güdelek - Fullstack Web Developer',
     pageTitleBlog: 'Blog-beratgdlk',
     pageTitleProjects: 'Projeler-beratgdlk',
-    pageTitleAbout: 'Hakkımda-beratgdlk'
+    pageTitleAbout: 'Hakkımda-beratgdlk',
+
+    // Projects Page
+    projectsDescription: 'GitHub GraphQL ile çekilen gerçek projelerim. Son commit tarihine göre sıralanmış, pinli projeler en üstte.',
+    featuredProjectsTitle: 'Öne Çıkan Projeler',
+    otherProjectsTitle: 'Diğer Projeler',
+    otherProjectsSubtitle: 'Son commit tarihine göre sıralanmış {count} proje',
+    showLess: 'Daha Az Göster',
+    showAll: 'Tümünü Göster',
+    showAllMore: 'Tümünü Göster ({count} proje daha)',
+    noProjectsFound: 'Henüz proje bulunamadı',
+
+    // Common/API Errors
+    githubApiErrorTitle: '🔑 GitHub API Hatası',
+    retryChecking: 'Tekrar Kontrol Ediliyor...',
+    retryAfterToken: "Token'ı Ekledim, Tekrar Dene"
   },
   en: {
     // Navigation
@@ -112,7 +142,22 @@ const translations: Record<Language, Translations> = {
     pageTitleHome: 'Berat Gudelek - Fullstack Web Developer',
     pageTitleBlog: 'Blog-beratgdlk',
     pageTitleProjects: 'Projects-beratgdlk',
-    pageTitleAbout: 'About-beratgdlk'
+    pageTitleAbout: 'About-beratgdlk',
+
+    // Projects Page
+    projectsDescription: 'Real projects fetched via GitHub GraphQL. Sorted by last commit date, pinned projects first.',
+    featuredProjectsTitle: 'Featured Projects',
+    otherProjectsTitle: 'Other Projects',
+    otherProjectsSubtitle: 'Sorted by last commit date, {count} projects',
+    showLess: 'Show Less',
+    showAll: 'Show All',
+    showAllMore: 'Show All ({count} more projects)',
+    noProjectsFound: 'No projects found yet',
+
+    // Common/API Errors
+    githubApiErrorTitle: '🔑 GitHub API Error',
+    retryChecking: 'Checking again...',
+    retryAfterToken: 'I added the token, try again'
   }
 };
 
