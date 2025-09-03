@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks";
-import { ChevronDown, ChevronUp, Pin } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { ProjectGrid, ProjectsError, ProjectsLoading } from "./components";
 import { useGitHubProjectsGraphQL } from "./hooks/useGitHubProjectsGraphQL";
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
               {t.projects}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              GitHub GraphQL ile çekilen gerçek projelerim. Son commit tarihine göre sıralanmış, pinli projeler en üstte.
+              {t.projectsDescription}
             </p>
           </div>
 
@@ -83,9 +83,7 @@ export default function ProjectsPage() {
               {pinnedProjects.length > 0 && (
                 <div className="space-y-6">
                   <div className="flex items-center gap-2 justify-center">
-                    <Pin className="h-5 w-5 text-primary" />
-                    <h2 className="text-2xl font-bold">Öne Çıkan Projeler</h2>
-                    <Pin className="h-5 w-5 text-primary" />
+                    <h2 className="text-2xl font-bold">{t.featuredProjectsTitle}</h2>
                   </div>
                   <ProjectGrid 
                     projects={pinnedProjects} 
@@ -100,9 +98,9 @@ export default function ProjectsPage() {
                 <div className="space-y-6">
                   {pinnedProjects.length > 0 && (
                     <div className="text-center">
-                      <h2 className="text-2xl font-bold mb-4">Diğer Projeler</h2>
+                      <h2 className="text-2xl font-bold mb-4">{t.otherProjectsTitle}</h2>
                       <p className="text-muted-foreground">
-                        Son commit tarihine göre sıralanmış {otherProjects.length} proje
+                        {t.otherProjectsSubtitle.replace('{count}', String(otherProjects.length))}
                       </p>
                     </div>
                   )}
@@ -124,12 +122,12 @@ export default function ProjectsPage() {
                         {showingAll ? (
                           <>
                             <ChevronUp className="mr-2 h-4 w-4 group-hover:-translate-y-0.5 transition-transform" />
-                            Daha Az Göster
+                            {t.showLess}
                           </>
                         ) : (
                           <>
                             <ChevronDown className="mr-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
-                            Tümünü Göster ({otherProjects.length - 6} proje daha)
+                            {otherProjects.length > 6 ? t.showAllMore.replace('{count}', String(otherProjects.length - 6)) : t.showAll}
                           </>
                         )}
                       </Button>
@@ -141,7 +139,7 @@ export default function ProjectsPage() {
               {/* Empty State */}
               {allProjects.length === 0 && (
                 <div className="text-center py-12">
-                  <h2 className="text-xl font-semibold mb-2">Henüz proje bulunamadı</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t.noProjectsFound}</h2>
                 </div>
               )}
             </div>
