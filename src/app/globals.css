@@ -80,11 +80,11 @@
 }
 
 .dark {
-  --background: hsl(0 0% 3.9%);
+  --background: hsl(0 0% 9%);
   --foreground: hsl(0 0% 98%);
-  --card: hsl(0 0% 3.9%);
+  --card: hsl(0 0% 9%);
   --card-foreground: hsl(0 0% 98%);
-  --popover: hsl(0 0% 3.9%);
+  --popover: hsl(0 0% 9%);
   --popover-foreground: hsl(0 0% 98%);
   --primary: hsl(0 0% 98%);
   --primary-foreground: hsl(0 0% 9%);
@@ -104,7 +104,7 @@
   --chart-3: hsl(30 80% 55%);
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
-  --sidebar: hsl(0 0% 3.9%);
+  --sidebar: hsl(0 0% 9%);
   --sidebar-foreground: hsl(0 0% 98%);
   --sidebar-primary: hsl(0 0% 98%);
   --sidebar-primary-foreground: hsl(0 0% 9%);
