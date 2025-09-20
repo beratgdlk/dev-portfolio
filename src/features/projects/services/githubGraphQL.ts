@@ -3,6 +3,7 @@
  * Pinned repositories ve daha detaylı repo bilgileri için
  */
 
+import { applyPinnedMeta } from '../data/pinnedProjectMeta';
 import { ProjectData } from '../types';
 
 // GraphQL Query - Kullanıcının tüm repoları + pinned bilgisi
@@ -258,7 +259,7 @@ export function mapGraphQLRepoToProject(repo: GitHubGraphQLRepo, isPinned: boole
     }
   };
 
-  return {
+  const base: ProjectData = {
     id: repo.nameWithOwner,
     repoName: repo.name,
     title: repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
@@ -280,6 +281,9 @@ export function mapGraphQLRepoToProject(repo: GitHubGraphQLRepo, isPinned: boole
     starCount: repo.stargazerCount,
     forkCount: repo.forkCount
   };
+
+  // Pinned projeler için özel meta (konular/teknolojiler) uygula
+  return applyPinnedMeta(base);
 }
 
 /**

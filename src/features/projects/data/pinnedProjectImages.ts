@@ -18,6 +18,20 @@ export const PINNED_PROJECT_IMAGES: Record<string, string> = {
   "beratgdlk/novadesk_adminpanel": "/assets/images/nova-desk.png",
   "novadesk_adminpanel": "/assets/images/nova-desk.png",
   
+  // OjsNutrition - repo isimleri için olası varyasyonlar
+  "beratgdlk/ojsnutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "ojsnutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "beratgdlk/ojs-nutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "ojs-nutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "beratgdlk/ojsnutrition-boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  "ojsnutrition-boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  "beratgdlk/ojs-nutrition-boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  "ojs-nutrition-boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  "beratgdlk/OjsNutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "OjsNutrition": "/assets/images/homepage-ojs-nutrition.png",
+  "beratgdlk/OjsNutrition-Boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  "OjsNutrition-Boilerplate": "/assets/images/homepage-ojs-nutrition.png",
+  
   // Yeni projeler için buraya ekleme yapılabilir
 };
 
