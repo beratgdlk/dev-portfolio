@@ -1,21 +1,22 @@
 "use client";
 
+import { useLanguage } from "@/hooks";
 import { Loader2 } from "lucide-react";
 
 interface ProjectsLoadingProps {
   message?: string;
 }
 
-export default function ProjectsLoading({ message = "GitHub'dan projeler yükleniyor..." }: ProjectsLoadingProps) {
+export default function ProjectsLoading({ message }: ProjectsLoadingProps) {
+  const { t } = useLanguage();
+  const defaultMessage = t.projectsLoadingMessage;
   return (
     <div className="text-center py-16">
       <div className="max-w-md mx-auto">
         <Loader2 className="h-12 w-12 animate-spin text-primary mx-auto mb-6" />
-        <h3 className="text-lg font-semibold mb-2">
-          Lütfen Bekleyin
-        </h3>
+        <h3 className="text-lg font-semibold mb-2">{t.projectsLoadingTitle}</h3>
         <p className="text-muted-foreground">
-          {message}
+          {message ?? defaultMessage}
         </p>
         
         {/* Skeleton cards preview */}

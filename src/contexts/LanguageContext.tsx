@@ -49,6 +49,8 @@ interface Translations {
   showAll: string;
   showAllMore: string; // uses {count}
   noProjectsFound: string;
+  projectsLoadingTitle: string;
+  projectsLoadingMessage: string;
 
   // Common/API Errors
   githubApiErrorTitle: string;
@@ -93,7 +95,7 @@ const translations: Record<Language, Translations> = {
     backToBlog: 'Blog\'a Dön',
     
     // Footer
-    copyright: 'Berat Güdelek • © {year} • beratgdlk.com',
+    copyright: 'Berat Güdelek • © {year}',
     
     // Page Titles
     pageTitleHome: 'Berat Güdelek - Fullstack Web Developer',
@@ -110,6 +112,8 @@ const translations: Record<Language, Translations> = {
     showAll: 'Tümünü Göster',
     showAllMore: 'Tümünü Göster ({count} proje daha)',
     noProjectsFound: 'Henüz proje bulunamadı',
+    projectsLoadingTitle: 'Lütfen Bekleyin',
+    projectsLoadingMessage: "GitHub'dan projeler yükleniyor...",
 
     // Common/API Errors
     githubApiErrorTitle: '🔑 GitHub API Hatası',
@@ -152,7 +156,7 @@ const translations: Record<Language, Translations> = {
     backToBlog: 'Back to Blog',
     
     // Footer
-    copyright: 'Berat Güdelek • © {year} • beratgdlk.com',
+    copyright: 'Berat Gudelek • © {year}',
     
     // Page Titles
     pageTitleHome: 'Berat Gudelek - Fullstack Web Developer',
@@ -169,6 +173,8 @@ const translations: Record<Language, Translations> = {
     showAll: 'Show All',
     showAllMore: 'Show All ({count} more projects)',
     noProjectsFound: 'No projects found yet',
+    projectsLoadingTitle: 'Please Wait',
+    projectsLoadingMessage: 'Loading projects from GitHub...',
 
     // Common/API Errors
     githubApiErrorTitle: '🔑 GitHub API Error',
