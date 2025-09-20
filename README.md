@@ -1,7 +1,7 @@
 # 🚀 Berat Güdelek - Developer Portfolio
 
 <div align="center">
-  <img src="public/logo-bg.svg" alt="Logo" width="120" height="120">
+  <img src="public/assets/icons/logo-bg.svg" alt="Logo" width="120" height="120">
   
   **Modern, responsive portfolio website built with Next.js 15 and TypeScript**
   
