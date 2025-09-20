@@ -46,7 +46,9 @@ export default function Footer() {
           </a>
           
           <a 
-            href="/resume.pdf"
+            href="/assets/berat-güdelek-resume2025.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors p-2"
             aria-label="Download CV"
           >
