@@ -3,14 +3,13 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { notFound } from "next/navigation";
-import React from "react";
 import BlogDetail from "../components/BlogDetail";
 import { blogPosts } from "../data";
 
 interface BlogDetailPageProps {
-  params: Promise<{
+  params: {
     slug: string;
-  }>;
+  };
 }
 
 export default function BlogDetailPage({ params }: BlogDetailPageProps) {
@@ -26,8 +25,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
 }
 
 function BlogDetailPageInner({ params }: BlogDetailPageProps) {
-  const resolvedParams = React.use(params);
-  const post = blogPosts.find(post => post.slug === resolvedParams.slug);
+  const post = blogPosts.find(post => post.slug === params.slug);
 
   if (!post) {
     notFound();
