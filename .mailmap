@@ -1,0 +1,5 @@
+# Emre'nin bilinen e-postaları varsa aşağıya birer satır ekleyebilirsin, örnek:
+# Berat Gudelek <beratgdlk@gmail.com> Emre Seferoğlu <emre@ornek.com>
+
+# İsim bazlı eşleme (tüm "Emre Seferoğlu" commitleri sana yazılsın):
+Berat Gudelek <beratgdlk@gmail.com> Emre Seferoğlu
