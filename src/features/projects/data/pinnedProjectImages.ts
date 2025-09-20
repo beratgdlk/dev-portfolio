@@ -18,6 +18,14 @@ export const PINNED_PROJECT_IMAGES: Record<string, string> = {
   "beratgdlk/novadesk_adminpanel": "/assets/images/nova-desk.png",
   "novadesk_adminpanel": "/assets/images/nova-desk.png",
   
+  // ControlHub AdminPanel - olası varyasyonlar
+  "beratgdlk/controlhub": "/assets/images/controlhub-image.png",
+  "controlhub": "/assets/images/controlhub-image.png",
+  "beratgdlk/controlhub-adminpanel": "/assets/images/controlhub-image.png",
+  "controlhub-adminpanel": "/assets/images/controlhub-image.png",
+  "beratgdlk/controlhub-admin-panel": "/assets/images/controlhub-image.png",
+  "controlhub-admin-panel": "/assets/images/controlhub-image.png",
+
   // OjsNutrition - repo isimleri için olası varyasyonlar
   "beratgdlk/ojsnutrition": "/assets/images/homepage-ojs-nutrition.png",
   "ojsnutrition": "/assets/images/homepage-ojs-nutrition.png",
