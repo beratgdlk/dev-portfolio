@@ -40,6 +40,12 @@ export const PINNED_PROJECT_IMAGES: Record<string, string> = {
   "beratgdlk/OjsNutrition-Boilerplate": "/assets/images/homepage-ojs-nutrition.png",
   "OjsNutrition-Boilerplate": "/assets/images/homepage-ojs-nutrition.png",
   
+  // Magio - olası varyasyonlar
+  "beratgdlk/magio": "/assets/images/magio.png",
+  "magio": "/assets/images/magio.png",
+  "beratgdlk/Magio": "/assets/images/magio.png",
+  "Magio": "/assets/images/magio.png",
+  
   // Yeni projeler için buraya ekleme yapılabilir
 };
 
